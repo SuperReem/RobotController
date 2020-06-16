@@ -1,0 +1,201 @@
+<html>
+
+<style>
+    body {
+        background: url("666.png");
+        background-size: cover;
+    }
+   #dv1 {
+        
+        background-color:#000;
+        width: 500px;
+        height: 260px;
+        margin-top: 230px;
+        margin-left: 470px;
+        position: absolute;
+        border-radius: 7px;
+        box-shadow: 0 0 40px #000;
+       
+    }
+    #btn1 {
+       width: 70px;
+       height: 70px;
+       border-radius: 50px;
+       margin-top: -9px;
+       z-index: -1;
+    }
+    #btn1:hover{
+        background-color: grey;
+    }
+     #btn1:active{
+        background-color: grey;
+        border-color: lawngreen;
+    }
+    #btn2 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: red;
+        margin-right: 16px;
+        box-shadow: 0 0 15px red;
+    }
+    #btn2:hover{
+        background-color: #C60E0E;
+    }
+    #btn2:active{
+        background-color: lawngreen;
+        box-shadow: 0 0 10px green;;
+    }
+    #btn2:active, select, textarea{
+       
+    }
+    #btn2, select, textarea {
+        color: #fff;
+        font-size: 17px;
+    }
+    #btn3 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        margin-right: 15px;
+       
+        
+    }
+    #btn3:hover{
+        background-color: grey;
+    }
+     #btn3:active{
+        background-color: grey;
+        border-color: lawngreen;
+    }
+    #btn4 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        
+    }
+    #btn4:hover{
+        background-color: grey;
+    }
+    #btn4:active{
+        background-color: grey;
+        border-color: lawngreen;
+    }
+    #btn5 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+    }
+    #btn5:hover{
+        background-color: grey;
+    }
+     #btn5:active{
+        background-color: grey;
+        border-color: lawngreen;
+    }
+     #right {
+        
+        width: 20px;
+        height: 20px;
+    }
+     #left {
+        
+        width: 20px;
+        height: 20px;
+    }
+    #forwards {
+        
+        width: 20px;
+        height: 20px;
+    }
+    #backwards {
+        
+        width: 20px;
+        height: 20px;
+    }
+    #dv2 {
+        float: right;
+        margin-right: 13px;
+        margin-top: 10px;
+    }
+    #dv3 {
+        margin-top: 20px;
+        margin-right: -226px;
+    }
+    #dv4 {
+        margin-top: 98px;
+        margin-right: -227px;
+    }
+    #dv5 {
+        background-color: #C2CCCD;
+        width: 170px;
+        height :220px;
+        margin-top: 250px;
+        margin-left: 500px;
+        z-index: 9999;
+        display: block;
+        border-radius: 2px;
+        box-shadow: 0 0 15px #CBD4D5;
+        position: fixed;
+            
+    }
+    #robotface {
+        margin-top: 45px;
+        margin-left: 20px;
+    }
+    #label1 {
+        color: #fff;
+        font-family: monospace;
+        font-weight: 100;
+        font-size: 60px;
+        text-shadow: 0 0 15px ;
+    }
+    
+ 
+    </style>
+    
+    
+<script type="text/javascript">
+     function change( el )
+    {
+    if ( el.value === "STOP")
+        el.value = "START";
+    else
+        el.value = "STOP";
+     }
+</script>
+    
+<head>
+    <center><label id="label1">Robot Controller</label></center>
+</head>
+
+ 
+<body>
+    
+     <div id="dv5"><img id="robotface" src="rsz_robot.png"/></div>
+    
+     <center><div id="dv1"/>
+     
+     <div id="dv3">
+     <button id="btn1"><img id="forwards" src="chevron.png"/></button>  
+     </div>
+     <div id="dv2">
+    
+    
+     <button id="btn3"><img id="left" src="back.png"/></button> 
+     <input onclick="return change(this);" type="button" value="STOP" id="btn2"/>
+     <button id="btn4"><img id="right" src="next.png"/> </button>
+    
+     </div>
+     <div id="dv4">
+     
+     <button id="btn5"><img id="backwards" src="down.png"/></button>
+     
+     </div> 
+     
+     </center>
+  
+</body>
+
+
+</html>
